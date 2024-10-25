@@ -1,0 +1,18 @@
+<section class="choice">
+  <div class="container">
+    <div class="choice-content">
+      <h1 class="common-title choice-title">Выберите <span>тему теста</span></h1>
+      <div class="choice-description">Чтобы начать тест, выберите одну из предложенных ниже тем.</div>
+      <div class="choice-options" id="choice-options">
+        <div class="choice-option" *ngFor="let quiz of quizzes" (click)="chooseQuiz(quiz.id)">
+          <div class="choice-option-result" *ngIf="quiz.result"><div>Результат</div><div>{{quiz.result}}</div></div>
+          <div class="choice-option-text">{{quiz.name}}</div>
+          <div class="choice-option-arrow"><img src="/assets/images/arrow.png" alt="Стрелка"></div>
+        </div>
+      </div>
+    </div>
+    <div class="choice-image">
+      <img src="/assets/images/choice-image.png" alt="Персонажи">
+    </div>
+  </div>
+</section>

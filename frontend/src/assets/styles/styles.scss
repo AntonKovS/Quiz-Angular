@@ -1,0 +1,6 @@
+@import "fonts";        //помним про приоритеты, сначала подключаем шрифты
+@import "global";
+@import "form";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
